@@ -212,3 +212,9 @@ class DataService:
 
 # Global instance
 data_service = DataService()
+
+if __name__ == "__main__":
+    # Example usage
+    lat, lon = 79.160694 , 12.969728
+    analysis = data_service.get_comprehensive_analysis(lat, lon, "")
+    print(analysis)
